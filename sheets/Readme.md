@@ -14,10 +14,6 @@ https://docs.google.com/spreadsheets/d/1Z_DonR4P5T5xyjKODgDyyF3BgQG7eObodl8d1IWx
 
 `gcloud functions deploy sheets-send-proposals --runtime go111 --trigger-http --allow-unauthenticated --entry-point SendProposals`
 
-### Deploy authentication cloud function
-
-`gcloud functions deploy sheets-authenticate --runtime go111 --trigger-http --allow-unauthenticated --entry-point Authenticate`
-
 ### Pause Update Scheduled Task
 
 `gcloud scheduler jobs pause SHEETS-UPDATE-INCOMING`

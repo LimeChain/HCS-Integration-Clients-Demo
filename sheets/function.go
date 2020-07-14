@@ -11,7 +11,7 @@ import (
 	"net/http"
 )
 
-var proxyURL = "http://localhost:8181"
+var proxyURL = "http://35.202.31.77:8182"
 
 func proxySprintf(pattern string, a ...interface{}) string {
 	return fmt.Sprintf(proxyURL+pattern, a...)

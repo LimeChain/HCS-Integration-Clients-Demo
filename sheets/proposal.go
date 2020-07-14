@@ -17,7 +17,7 @@ func getSKU(skuID, counterpartyId string, skus [][]interface{}) (sku proposalSku
 			continue
 		}
 
-		return proposalSku{fmt.Sprintf("%s", row[2]), counterpartyId, fmt.Sprintf("%s", row[0])}, nil
+		return proposalSku{fmt.Sprintf("%s", row[1]), counterpartyId, fmt.Sprintf("%s", row[0])}, nil
 	}
 
 	return sku, fmt.Errorf("Could not find sku with id %v", skuID)
